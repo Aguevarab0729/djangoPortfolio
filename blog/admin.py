@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import AboutMe
+from .models import About
 
-admin.site.register(AboutMe)
+admin.site.register(About)

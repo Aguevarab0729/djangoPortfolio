@@ -1,1 +1,22 @@
-<h1>About</h1>
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1 class="text-center">Mi Experiencia</h1>
+    <div class="p-3">
+        {% for about in abouts %}
+        <div class="card card-body">
+            <div class="row">
+                <div class="col-3">
+                    {% if about.photo %}
+                        <img src="{{ about.photo.url }}" alt="{{ about.title }}" class="img-fluid">
+                    {% endif %}
+                </div>
+                <div class="col-9">
+                    <h5>{{ about.title }}</h5>
+                    <p>{{ about.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
