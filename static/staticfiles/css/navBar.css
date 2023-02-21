@@ -1,0 +1,26 @@
+p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Overlock SC', cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-item a:hover {
+    background-color: #198F7F;
+}
+
+.dropdown-menu {
+    font-family: 'Overlock SC', cursive;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    font-family: 'Overlock SC', cursive;
+    font-weight: bold;
+}

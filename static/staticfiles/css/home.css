@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overlock SC', cursive;
+}
+
+p {
+    font-family: 'Overlock', cursive;
+    font-size: 1.3rem;
+}
+
+.image-circle {
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.card-card-body {
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.img-fluid {
+    padding: 10%;
+}
