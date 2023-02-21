@@ -1,7 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1 class="text-center">Mi Experiencia</h1>
+
+    <h1 class="text-center">Mi Experiencia y Skills</h1>
     <div class="p-3">
         {% for about in abouts %}
         <div class="card card-body">
@@ -11,12 +12,13 @@
                         <img src="{{ about.photo.url }}" alt="{{ about.title }}" class="img-fluid">
                     {% endif %}
                 </div>
-                <div class="col-9">
-                    <h5>{{ about.title }}</h5>
+                <div class="col-9" style="width: 40rem; margin: 4%;">
+                    <h5><strong>{{ about.title }}</strong></h5>
                     <p>{{ about.description }}</p>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
+    <br>
 {% endblock %}
